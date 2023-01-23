@@ -1,0 +1,72 @@
+.footer {
+  padding: 78px 0 86px 0;
+  background-color: $secondaryColor;
+  &__container {
+    display: grid;
+    gap: calc(107 / 1420 * 100%);
+    grid-template-columns:
+      calc(342 / 1420 * 100%) calc(340 / 1420 * 100%)
+      calc(524 / 1420 * 100%);
+    @media (max-width: ($md2 + px)) {
+      gap: 40px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: ($md3 + px)) {
+      gap: 40px;
+      grid-template-columns: 1fr;
+    }
+  }
+  &__logo {
+    margin-bottom: 16px;
+  }
+  &__copyright {
+    text-transform: uppercase;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 16px;
+    display: block;
+  }
+  &__text {
+    font-family: "Ubuntu", sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    line-height: calc(17 / 15 * 100%);
+  }
+  &__link {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    font-size: 22px;
+    line-height: calc(25 / 22 * 100%);
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+    @media (max-width: ($md4 + px)) {
+      font-size: 14px;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+    &-link {
+      font-size: 0;
+      &:before {
+        color: white;
+      }
+    }
+  }
+  &__insta {
+    margin-bottom: 20px;
+    color: white;
+  }
+}

@@ -1,0 +1,20 @@
+.popup#call2
+    .popup__body
+        .popup__content
+            span.popup__close.close-popup
+            .popup__flex.popup2
+                .form__image
+                    img(src="./assets/images/5.png", alt="Картинка")
+                .form__content
+                    h2.form__title Получите презентацию и бизнес план
+                    p.text.form__text заполните форму, и мы отправим вам информацию
+                    form.form(action="#")
+                        input(placeholder="Имя" name="name" required).form__input.name
+                        input(placeholder="Ваш телефон" name="telephone" type="tel" required).form__input.phone
+                        button.btn.form__btn.btn3 Отправить заявку
+                    p.smalltext.form__smalltext
+                        | Отправляя заявку, вы соглашаетесь на обработку персональных данных в соответствии с 
+                        a(href="/") политикой конфиденциальности
+            .form__succes.succes2
+                h2.form__title СПАСИБО
+                p.form__succes-text Специалист свяжется с вами в рабочее время

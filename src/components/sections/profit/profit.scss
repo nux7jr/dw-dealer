@@ -1,0 +1,100 @@
+.profit {
+  padding: 84px 0 167px 0;
+  text-align: center;
+  background-color: #f4f4f4;
+  @media (max-width: ($md4 + px)) {
+    padding: 53px 0 80px 0;
+  }
+  &__title {
+    margin-bottom: 20px;
+    span {
+      color: $mainColor;
+    }
+    @media (max-width: ($md4 + px)) {
+      margin-bottom: 8px;
+    }
+  }
+  &__text {
+    margin-bottom: 80px;
+    @media (max-width: ($md4 + px)) {
+      margin-bottom: 32px;
+      max-width: 210px;
+      margin: 0 auto 32px auto;
+    }
+  }
+  &__grid {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 80px;
+    &-text {
+      max-width: 582px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      @media (max-width: ($md4 + px)) {
+        margin-bottom: 16px;
+        max-width: 240px;
+      }
+    }
+    @media (max-width: ($md2 + px)) {
+      gap: 24px;
+    }
+    @media (max-width: ($md3 + px)) {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width: ($md4 + px)) {
+      margin-bottom: 32px;
+    }
+  }
+  &__item {
+    padding: 160px 104px;
+    text-align: left;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    );
+    &:first-child {
+      background-image: url("../images/2.png");
+      background-size: cover;
+    }
+    &:last-child {
+      background-image: url("../images/3.png");
+      background-size: cover;
+    }
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+    &-title {
+      color: $mainColor;
+      margin-bottom: 10px;
+      @media (max-width: ($md4 + px)) {
+        margin-bottom: 4px;
+      }
+    }
+    &-text {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      span {
+        font-weight: 700;
+        font-size: 65px;
+        line-height: calc(79 / 65 * 100%);
+        @media (max-width: ($md4 + px)) {
+          font-size: 26px;
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 40px;
+        @media (max-width: ($md4 + px)) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+    @media (max-width: ($maxWidthContainer + px)) {
+      padding: 120px 64px;
+    }
+    @media (max-width: ($md2 + px)) {
+      padding: 34px 36px 50px 36px;
+    }
+  }
+}

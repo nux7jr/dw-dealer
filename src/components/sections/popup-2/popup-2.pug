@@ -1,0 +1,18 @@
+.popup#call
+    .popup__body
+        .popup__content.popup-2__content
+            span.popup__close.close-popup
+            .popup__flex.popup3
+                .form__content.form-2__content
+                    h2.form__title Заполните форму
+                    p.text.form__text.modal-text и наш менеджер перезвонит вам в рабочее время
+                    form.form(action="#")
+                        input(placeholder="Имя" name="name" required).form__input.name2
+                        input(placeholder="Ваш телефон" name="telephone" type="tel" required).form__input.phone2
+                        button.btn.form__btn.btn2 Отправить заявку
+                    p.smalltext.form__smalltext
+                        | Отправляя заявку, вы соглашаетесь на обработку персональных данных в соответствии с 
+                        a(href="/") политикой конфиденциальности
+            .form__succes.succes3
+                h2.form__title СПАСИБО
+                p.form__succes-text Специалист свяжется с вами в рабочее время

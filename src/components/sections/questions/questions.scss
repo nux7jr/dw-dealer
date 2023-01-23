@@ -1,0 +1,101 @@
+.questions {
+  padding: 109px 0 74px 0;
+  background-color: #f4f4f4;
+  @media (max-width: ($md5 + px)) {
+    padding: 62px 0 74px 0;
+  }
+  &__container {
+    display: grid;
+    gap: calc(60 / 1420 * 100%);
+    grid-template-columns:
+      calc(433 / 1420 * 100%) calc(498 / 1420 * 100%)
+      calc(369 / 1420 * 100%);
+    @media (max-width: ($md2 + px)) {
+      gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: ($md3 + px)) {
+      gap: 60px;
+      grid-template-columns: 1fr;
+    }
+  }
+  &__succes {
+    display: none;
+    flex-direction: column;
+    h2 {
+      color: $secondaryColor;
+    }
+    p {
+      color: $secondaryColor;
+    }
+  }
+  &__item {
+    &:nth-child(2) {
+      flex-direction: column;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(50 / 40 * 100%);
+    color: $secondaryColor;
+    margin-bottom: 10px;
+    @media (max-width: ($md5 + px)) {
+      font-size: 20px;
+    }
+  }
+  &__text {
+    color: rgba(37, 37, 37, 0.6);
+    margin-bottom: 20px;
+  }
+  &__input {
+    padding: 5px 20px;
+    border: 1px solid #565654;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 20px;
+    &:focus,
+    &:active {
+      border: 1px solid $secondaryColor;
+    }
+    &::placeholder {
+      color: rgba(37, 37, 37, 0.5);
+      font-size: 22px;
+      line-height: 27px;
+    }
+  }
+  &__btn {
+    margin-bottom: 20px;
+    pointer-events: none;
+    cursor: default;
+    background-color: lighten($mainColor, 20%);
+    @media (max-width: ($md4 + px)) {
+      text-align: center;
+    }
+  }
+  &__smalltext {
+    color: rgba(37, 37, 37, 0.5);
+  }
+  &__tel {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    background-color: $secondaryColor;
+    border-radius: 20px;
+    text-align: center;
+  }
+}
+.btn-active {
+  pointer-events: auto;
+  cursor: pointer;
+  background-color: $mainColor;
+}

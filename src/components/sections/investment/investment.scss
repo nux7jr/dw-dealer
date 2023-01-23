@@ -1,0 +1,78 @@
+.investment {
+  padding: 184px 0 136px 0;
+  background-color: #f4f4f4;
+  @media (max-width: ($md4 + px)) {
+    padding: 124px 0 76px 0;
+  }
+  &__title {
+    margin-bottom: 60px;
+    span {
+      color: $mainColor;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 40px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 60px;
+    margin-bottom: 60px;
+    @media (max-width: ($md4 + px)) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    padding: 50px 84px;
+    background-image: url("../images/4.jpeg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    &-title {
+      color: white;
+      margin-bottom: 10px;
+      span {
+        color: $mainColor;
+      }
+    }
+    @media (max-width: ($md4 + px)) {
+      padding: 50px 25px;
+    }
+  }
+  &__list {
+    flex: 1 1 auto;
+    margin-bottom: 40px;
+    &-item {
+      color: white;
+      span {
+        color: #aeaeae;
+      }
+    }
+  }
+  &__sublist {
+    margin-bottom: 40px;
+    &-item {
+      color: $secondaryColor;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: calc(27 / 22 * 100%);
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      &:before {
+        content: "";
+        display: block;
+        width: 48px;
+        height: 3px;
+        background-color: $mainColor;
+        margin-right: 15px;
+      }
+      @media (max-width: ($md4 + px)) {
+        font-size: 14px;
+      }
+    }
+  }
+}

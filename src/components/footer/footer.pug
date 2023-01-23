@@ -1,0 +1,28 @@
+-
+    var socialLinks = [
+        {textLink: 'Инстаграм', href: '/', icon: 'icon-4'},
+        {textLink: 'Вконтакте', href: '/', icon: 'icon-5'},
+        {textLink: 'youtube', href: '/', icon: 'icon-6'},
+    ]
+
+footer.footer
+    .container.footer__container
+        .footer__item
+            .footer__logo
+                a(href="/")
+                    img(src="./assets/images/logo-2.svg", alt="Логотип")
+            span.footer__copyright daewoo enertec Все права защищены
+            p.footer__text ИП Ким Сергей Геннадьевич<br>Юр.адрес - 660135, Красноярск, Октябрьская 8а<br>ИНН: 272498786001<br>ОГРНИП: 321246800035051
+        .footer__item
+            h3.footer__title.footer__link Юридические документы
+            a.footer__link(href="/") Политика конфиденциальности
+            a.footer__link(href="/") Политика обработки персональных данных
+        .footer__item
+            h3.footer__title.footer__link(style={'margin-bottom': '16px'}) Социальные сети
+            ul.footer__list
+                each val in socialLinks
+                    li.footer__list-item
+                        a.footer__list-link(class= val.icon href= val.href)= val.textLink
+            p.footer__text.footer__insta *Организация, запрещенная на территории РФ
+            h3.footer__title.footer__link(style={'margin-bottom': '23px'}) Мессенджеры
+            a.footer__list-link(class='icon-7' href="/") whatsapp

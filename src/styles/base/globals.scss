@@ -1,0 +1,63 @@
+body.lock {
+  overflow: hidden !important;
+}
+main {
+  overflow: hidden;
+}
+.container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: ($md1 + px)) {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+.btn {
+  border-radius: 20px;
+  background-color: $mainColor;
+  padding: 5px 20px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: calc(27 / 22 * 100%);
+  color: white;
+  @media (max-width: ($md4 + px)) {
+    font-size: 14px;
+    padding: 2px 8px;
+    text-align: left;
+    border-radius: 9px;
+  }
+}
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: calc(43 / 35 * 100%);
+  color: $secondaryColor;
+  @media (max-width: ($md2 + px)) {
+    font-size: 28px;
+  }
+  @media (max-width: ($md4 + px)) {
+    font-size: 20px;
+  }
+}
+.text {
+  font-size: 20px;
+  line-height: calc(24 / 20 * 100%);
+  color: $secondaryColor;
+  @media (max-width: ($md4 + px)) {
+    font-size: 12px;
+  }
+}
+.smalltext {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: calc(18 / 15 * 100%);
+}
+.slick {
+  &-list {
+    overflow: hidden;
+  }
+  &-track {
+    display: flex;
+  }
+}

@@ -1,0 +1,13 @@
+.popup-2 {
+  &__content {
+    width: 689px;
+    text-align: center;
+  }
+}
+.form-2 {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

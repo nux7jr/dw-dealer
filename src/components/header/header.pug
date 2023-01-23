@@ -1,0 +1,22 @@
+-
+    var navLinks = [
+        {textLink: 'Интернет-магазин', href: '/'},
+        {textLink: 'Отзывы', href: '/'},
+        {textLink: 'О компании', href: '/'},
+        {textLink: 'Франшиза', href: '/'},
+        {textLink: 'Блог', href: '/'},
+    ]
+
+header.header
+    .container.header__container
+        .header__logo
+            a(href="/")
+                img(src="./assets/images/logo.svg", alt="Логотип")
+        nav.header__nav
+            ul.header__nav-list
+                each val in navLinks
+                    li.header__nav-item
+                        a.header__nav-link(href= val.href)= val.textLink
+        .header__block
+            a.header__tel(href="tel:+7(913)205-06-13") +7(913)205-06-13
+            button.btn.header__btn.popup-link(href="call" data-id=1) Заказать звонок

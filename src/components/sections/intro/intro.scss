@@ -1,0 +1,45 @@
+.intro {
+  //background-image: url("../images/bg.jpeg");
+  background-image: url("../images/bg-10.jpeg");
+  background-size: cover;
+  padding: 279px 0 263px 0;
+  @media (max-width: ($md4 + px)) {
+    padding: 135px 0 128px 0;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: calc(68 / 56 * 100%);
+    text-transform: uppercase;
+    max-width: 1136px;
+    margin-bottom: 26px;
+    color: white;
+    @media (max-width: ($md2 + px)) {
+      font-size: 32px;
+    }
+    @media (max-width: ($md4 + px)) {
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+  }
+  &__list {
+    margin-bottom: 43px;
+    @media (max-width: ($md4 + px)) {
+      margin-bottom: 12px;
+    }
+    &-item {
+      font-size: 22px;
+      line-height: calc(35 / 22 * 100%);
+      color: white;
+      span {
+        font-weight: 700;
+      }
+      @media (max-width: ($md4 + px)) {
+        font-size: 12px;
+      }
+    }
+  }
+  &__btn {
+    text-transform: uppercase;
+  }
+}
